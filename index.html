@@ -12,34 +12,46 @@
           </a>
         </p>    
         <div>
-          <!-- Здесь будет форма -->
+          <form action="" method="get">
+            <p>
+              <label for="search">Поиск</label>
+              <input id="search" type="text" name="search" value="">
+            </p>
+          </form>
           <p>
-            <input type="search" value="Поиск">
+            <label>
+              <a href="">Закладки: 0</a>
+            </label>
           </p>
-          <!-- Здесь будет форма -->
-          <a href="">Закладки:</a>
-          <!-- Здесь будет форма -->
-          <a href="">Корзина</a>
-          <a href="">Оформить заказ</a>  
+          <p>
+            <label>
+              <a href="">Корзина: 0</a>
+            </label>
+          </p>
+          <p>
+            <label>
+              <a href="">Оформить заказ</a>
+            </label>
+          </p>
         </div>               
         <div>   
           <p>
-            <em>Интернет-магазин
-                строительных материалов
+            <em>Интернет-магазин<br>
+                строительных материалов<br>
                 и инструментов для ремонта</em>
           </p>
-          <p>+7 (812) 555-05-55</p>
-          <p>г. Санкт-Петербург, Б. Конюшенная, д.</p>
-          <ul>
+          <p aria-lable="Телефон магазина">+7 (812) 555-05-55</p>
+          <p aria-lable="Адрес магазина">г. Санкт-Петербург, Б. Конюшенная, д.</p>
+          <ul class="user-navigation">
             <li>
-              <a href="">Войти</a>
+              <a class="login-link" href="login.html">Войти</a>
             </li>
             <li>
-              <a href="">Регистрация</a>
+              <a class="si" href="si.html">Регистрация</a>
             </li>
           </ul>
         </div>
-        <nav>
+        <nav aria-lable="user-navigation">
           <ul>
             <li>
               <a href="index.html">Главная</a>
@@ -67,27 +79,27 @@
       </header>
       <main>
         <section>
-          <h1>Преимущества</h1>
+          <h1 class="visually-hidden">Преимущества</h1>
             <ul>
               <li>
-                <span>Материалы</span>
+                <span>Материалы</span><br>
                 <span>На любой вкус</span>
                 <span>new</span>
               </li>
               <li>
-                <span>Инструменты</span>
+                <span>Инструменты</span><br>
                 <span>На все случаи</span>
               </li>
               <li>
-                <span>Техника</span>
+                <span>Техника</span><br>
                 <span>Для стройки</span>
               </li>
               <li>
-                <span>Скидки 50%</span>
+                <span>Скидки 50%</span><br>
                 <span>На 350 товаров</span>
               </li>
               <li>
-                <span>Доставка</span>
+                <span>Доставка</span><br>
                 <span>Бесплатно</span>
               </li>
             </ul>
@@ -96,12 +108,12 @@
               <p>Соседям на радость!</p>
               <figure>
                 <a href="#">
-                  <img src="img/reclama.png" width="621" height="269" alt="Instrument">
+                  <img src="img/reclama.png" width="621" height="269" alt="gallery">
                 </a>
               </figure>
-              <button type="button">Назад</button>
-              <button type="button">Вперед</button>
-              <a href="catalog.html">Открыть каталог</a>
+              <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+              <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+              <a class="open catalog" href="catalog.html">Открыть каталог</a>
             </div>
         </section>      
         <section>  
@@ -268,17 +280,31 @@
                 <li>Автотрейдинг</li>
                 <li>Желдорэкспедиция</li>
               </ul>
-              <a href="">Подробнее о компании</a>
+              <a href="">Подробнее о компании:</a>
           </div>
           <div>
             <h2>Контакты</h2>
               <p>Вы можете забрать товар сами,<br> 
                 заехав в наш офис:</p>
-              <a href=""> 
-                <img src="map.jpg" width="300" height="196" alt="Карта">
+              <a href="#"> 
+                <img src="img/map.png" width="300" height="196" alt="Карта">
               </a>
-              <a href="">Заблудились напишите нам</a>
-              <!-- Здесь будет форма -->
+              <a href="">Заблудились? Напишите нам!</a>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label for="appointment-name">Ваше имя:</label>
+                  <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                  <label for="appointment-adress">Ваш e-mail:</label>
+                  <input id="appointment-adress" type="text" name="e-mail" value="" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label for="appointment-message">Текст письма:</label>
+                  <input id="appointment-message" type="text" name="message" value="" placeholder="В свободной форме">
+                </p>
+                <button type="submit">Отправить</button>
+              </form>
           </div>
         </section>
       </main>
@@ -335,13 +361,13 @@
             <div>
               <ul>
                 <li>
-                  <a href="#">Вконтакте</a>
+                  <a href="#" aria-lable="Техномарт в ВКонтакте">Вконтакте</a>
                 </li>
                 <li>
-                  <a href="#">Фейсбук</a>
+                  <a href="#" aria-lable="Техномарт в Фейсбуке" >Фейсбук</a>
                 </li>
                 <li>
-                  <a href="#">Инстаграм</a>
+                  <a href="#" aria-lable="Техномарт в Инстаграмме">Инстаграм</a>
                 </li>
               </ul>
             </div>
