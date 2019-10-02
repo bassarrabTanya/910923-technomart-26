@@ -3,18 +3,24 @@
     <head>
       <meta charset="utf-8">
       <title>Интернет-магазин Техномарт</title>
+      <link href = "https://fonts.googleapis.com/css?family= Cuprum: 400,400i, 700,700i & display = swap & subset = cyrillic" rel = "stylesheet">
+      <link href = "https://fonts.googleapis.com/css?family= PT + Sans & display = swap & subset = кириллица" rel = "таблица стилей">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
       <header>
-        <p>
+          <div class="main-navigation">
+          <p>
           <a href="index.html">
             <img src="img/index-logo.svg" width="368" height="153" alt="логотип интернет-магазина «техномарт»">
           </a>
         </p>    
-        <div>
           <form action="https://catalog.html" method="get">
             <p>
-              <input id="search" type="text" name="search" value="">
+              <label>
+                Поиск<input id="search" type="text" name="search" value="">
+              </label>
             </p>
           </form>
           <p>
@@ -27,10 +33,10 @@
             <a href="">Оформить заказ</a>
           </p>
         </div>               
-        <div>   
+        <div class="contacts">   
           <p>
-            <em>Интернет-магазин<br>
-                строительных материалов<br>
+            <em>Интернет-магазин
+                строительных материалов
                 и инструментов для ремонта</em>
           </p>
           <p>+7 (812) 555-05-55</p>
@@ -44,7 +50,7 @@
             </li>
           </ul>
         </div>
-        <nav aria-label="user-navigation">
+        <nav aria-label="user-navigation" class="site-navigation">
           <ul>
             <li>
               <a href="index.html">Главная</a>
@@ -71,35 +77,35 @@
         </nav> 
       </header>
       <main>
-        <section>
+        <section class="features">
           <h1 class="visually-hidden">Преимущества</h1>
-            <ul>
-              <li>
-                <span>Материалы</span>
+            <ul class="features-list">
+              <li class="block feature-item1">
+                <h3>Материалы</h3>
                 <span>На любой вкус</span>
                 <span>new</span>
               </li>
-              <li>
-                <span>Инструменты</span>
+              <li class="block feature-item2">
+                <h3>Инструменты</h3>
                 <span>На все случаи</span>
               </li>
-              <li>
-                <span>Техника</span>
+              <li class="block feature-item3">
+                <h3>Техника</h3>
                 <span>Для стройки</span>
               </li>
-              <li>
-                <span>Скидки 50%</span>
+              <li class="block feature-item4">
+                <h3>Скидки 50%</h3>
                 <span>На 350 товаров</span>
               </li>
-              <li>
-                <span>Доставка</span>
+              <li class="block feature-item5">
+                <h3>Доставка</h3>
                 <span>Бесплатно</span>
               </li>
             </ul>
             <div>
               <p>Дрели</p>
               <p>Соседям на радость!</p>
-              <figure>
+              <figure class="gallery">
                 <a href="#">
                   <img src="img/reclama.png" width="621" height="269" alt="gallery">
                 </a>

@@ -1,0 +1,110 @@
+
+body {
+  margin:0;
+  padding:0;
+  font-family: "Cuprum","PT Sans", sans-serif;
+}
+  a {
+  text-decoration: none;
+  }
+
+  /* Шапка */
+  header{
+    background:#f3f7f9;
+  }
+  
+.main-navigation a{
+  font-size: 17px;
+  font-family: "Cuprum";
+  color: rgb(255, 255, 255);
+  line-height: 1.059;
+   }
+.main-navigation{
+    background-color:#293449;}
+
+.site-navigation a{
+  font-size: 17px;
+  font-family: "Cuprum";
+  color: rgb(255, 255, 255);
+  line-height: 1.059;
+}
+.site-navigation{
+   background-color:#32425c;
+}
+.user-navigation {
+  font-size: 21px;
+  font-family: "Cuprum";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  }
+
+.site-navigation, 
+.user-navigation{
+  list-style: none;
+}
+.main-navigation a:hover,
+.main-navigation a:focus{
+  background-color: #212a3a;}
+.site-navigation a:hover,
+.site-navigation a:focus{
+  background-color: #32425c;}
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: rgb(238, 54, 67);}
+
+/* main*/
+.features-list{
+  list-style: none;
+}
+
+.block {
+  display: inline-block;
+  width: 300px;
+  height: 122px;
+  margin: 5px;
+  
+    }
+
+  
+ }
+.feature-item1{
+  color: #ffffff;
+  
+  background-color: #ffbf47;
+  background-image: url("../img/icon1.svg");
+  background-position: 130 380;
+}
+
+.feature-item2{
+  color: #ffffff;
+  
+  background-color: #3bbce3;
+  background-image: url("../img/icon2.svg");
+  background-position: 450 380;
+}
+.feature-item3{
+  color: #ffffff;
+  
+  background-color: #dc91d8;
+  background-image: url("../img/icon3.svg");
+  background-position: 770 380;
+}
+.feature-item4{
+  color: #ffffff;
+  
+  background-color: #8ed78f;
+  background-image: url("../img/icon4.svg");
+  background-position: 770 522;
+}
+.feature-item5{
+  color: #ffffff;
+  
+  background-color: #ffc047;
+  background-image: url("../img/icon5.svg");
+  background-position: 770 665;
+}
+.gallery{
+ display: inline-block; 
+ background-position: 130 522;
+}
+

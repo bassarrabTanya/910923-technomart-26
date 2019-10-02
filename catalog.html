@@ -3,19 +3,25 @@
     <head>
       <meta charset="utf-8">
       <title>Интернет-магазин Техномарт</title>
+      <link href = "https://fonts.googleapis.com/css?family= Cuprum: 400,400i, 700,700i & display = swap & subset = cyrillic" rel = "stylesheet">
+      <link href = "https://fonts.googleapis.com/css?family= PT + Sans & display = swap & subset = кириллица" rel = "таблица стилей">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
       <header>
-        <p>
+          <div class="main-navigation">
+          <p>
           <a href="index.html">
             <img src="img/index-logo.svg" width="368" height="153" alt="логотип интернет-магазина «техномарт»">
           </a>
         </p>    
-        <div>
           <form action="http://index.html" method="get">
-          <p>
-            <input id="search" type="search" name="search" value="">
-          </p>
+            <p>
+              <label>
+                Поиск<input id="search" type="search" name="search" value="">
+              </label>
+            </p>
           </form>
           <p>
             <a href="">Закладки: 0</a>
@@ -27,7 +33,7 @@
             <a href="">Оформить заказ</a>
           </p>
         </div>               
-        <div>   
+        <div class="contacts">   
           <p>
             <em>Интернет-магазин
                 строительных материалов
@@ -40,7 +46,7 @@
           <a href="">Личный кабинет</a>
           <a href="">Выйти</a>
         </div>  
-        <nav aria-label="user-navigation">
+        <nav aria-label="user-navigation" class="site-navigation">
           <ul>
             <li>
               <a href="index.html">Главная</a>
@@ -213,6 +219,11 @@
                 <p>
                   <span>22 500 р</span>
                 </p>                  
+                <section class="visually-hidden">
+                  <p>Товар добавлен в корзину!</p>
+                  <a href="">Оформить заказ</a>
+                  <button type="button">Продолжить покупки</button>
+                </section>
                 <p>
                   <a href="#">15 500 р</a>
                 </p>
