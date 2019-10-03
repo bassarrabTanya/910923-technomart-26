@@ -52,7 +52,9 @@ body {
 .user-navigation a:focus {
   color: rgb(238, 54, 67);}
 
-/* main*/
+/* main
+
+Раздел с цветными блоками*/
 .features-list{
   list-style: none;
 }
@@ -71,36 +73,37 @@ body {
   color: #ffffff;
   
   background-color: #ffbf47;
-  background-image: url("../img/icon1.svg");
+  background-image: url("../img/orangephone.png");
   background-position: 130 380;
 }
 
 .feature-item2{
   color: #ffffff;
   
+  
   background-color: #3bbce3;
-  background-image: url("../img/icon2.svg");
+  background-image: url("../img/bluephone.png");
   background-position: 450 380;
 }
 .feature-item3{
   color: #ffffff;
   
   background-color: #dc91d8;
-  background-image: url("../img/icon3.svg");
+  background-image: url("../img/violetphone.png");
   background-position: 770 380;
 }
 .feature-item4{
   color: #ffffff;
   
   background-color: #8ed78f;
-  background-image: url("../img/icon4.svg");
+  background-image: url("../img/greenphone.png");
   background-position: 770 522;
 }
 .feature-item5{
   color: #ffffff;
   
   background-color: #ffc047;
-  background-image: url("../img/icon5.svg");
+  background-image: url("../img/downphone.svg");
   background-position: 770 665;
 }
 .gallery{
@@ -108,3 +111,59 @@ body {
  background-position: 130 522;
 }
 
+/* Перфораторы*/
+.popular{
+ 
+  
+ display: inline-block;
+  width: 940px;
+  height: 90px;
+  margin: 5px;
+ background-color: #f9f5f0;
+}
+.popular h2{
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: rgb(50, 66, 92);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: left;
+  }
+
+.popular a{ 
+  font-size: 3.994px;
+  font-family: "Cuprum";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.286;
+ 
+ background:url("../img/button-popular.png"); 
+  background: width="255px" height="40px";
+}
+/*service*/
+.service{
+  background:#f4f7f9;
+}
+.service h2{
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: left;
+
+}
+.garant{
+  visibility: hidden;
+}
+.garant h2{font-size: 36px;
+  font-family: "GillSans";
+  color: rgb(50, 66, 92);
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 0.667;
+    text-align: left;}
+.garant p{
+  
+}
