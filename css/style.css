@@ -1,53 +1,97 @@
 
-body {
+body {file:///C:/Users/acer)/Documents/GitHub/910923-technomart-26/index.html
+  font-family: "Cuprum", "sans-serif";
+  
   margin:0;
   padding:0;
-  font-family: "Cuprum","PT Sans", sans-serif;
+  background-image:url("../img/whitebackground.png");
+  background-color:#ffffff;
 }
-  a {
+a {
   text-decoration: none;
-  }
+}
 
   /* Шапка */
-  header{
-    background:#f3f7f9;
+header{
+  background:#f3f7f9;
   }
   
-.main-navigation a{
+.top_menu p,a,
+.menu a{
+  font-family: "Cuprum", "sans-serif";
   font-size: 17px;
-  font-family: "Cuprum";
-  color: rgb(255, 255, 255);
-  line-height: 1.059;
-   }
-.main-navigation{
-    background-color:#293449;}
-
-.site-navigation a{
-  font-size: 17px;
-  font-family: "Cuprum";
-  color: rgb(255, 255, 255);
-  line-height: 1.059;
+  font-style:normal;
+  color:#ffffff;
+  }
+.top_menu p,a{
+line-height:1.059;}
+.top_menu{
+background-color:#293449;}
+.zakaz{
+  background:url("../img/backgroundzakaz.png");
+  background-color:#63a63e;
 }
-.site-navigation{
-   background-color:#32425c;
+.menu a{ 
+line-height: 1;}
+.menu{
+background-color:#32425c;}
+
+.logotype{
+ padding:0px;
+ margin:0px;
+ 
+ background:url("../img/backgroundlogo.png");
+ background-color:#ee3643;
+ background-repeat:no-repeat;
+ background-position: 14px;
+}
+.em{
+  font-family:"Cuprum","sans-serif";
+  font-style:italic;
+  font-size:16px;
+  color:#ee3643;
+  line-height:1.438;
+}
+.telephone{
+  font-family:"Cuprum","sans-serif";
+  font-style:normal;
+  font-size:21px;
+  color:#ee3643;
+  line-height:1;
+}
+.adress{
+  font-family:"Cuprum","sans-serif";
+  font-style:normal;
+  font-size:14px;
+  color:#32425c;
+  line-height:1.714;
 }
 .user-navigation {
+  font-family: "Cuprum","sans-serif";
   font-size: 21px;
-  font-family: "Cuprum";
-  color: rgb(0, 0, 0);
+  font-style:normal;
+  color:#000000;
   line-height: 1;
   }
 
-.site-navigation, 
-.user-navigation{
-  list-style: none;
 }
-.main-navigation a:hover,
-.main-navigation a:focus{
+.menu, 
+.user-navigation,
+.brend_list,
+.service_list,
+.menu2,
+.menu3
+.public_seti {
+  list-style: none;}
+
+.top_menu a:hover,
+.top_menu a:focus{
   background-color: #212a3a;}
-.site-navigation a:hover,
-.site-navigation a:focus{
+
+.menu a:hover,
+.menu a:focus{
   background-color: #32425c;}
+
 .user-navigation a:hover,
 .user-navigation a:focus {
   color: rgb(238, 54, 67);}
@@ -55,7 +99,9 @@ body {
 /* main
 
 Раздел с цветными блоками*/
-.features-list{
+.features-list,
+.popular-list,
+.brend_list{
   list-style: none;
 }
 
@@ -64,106 +110,259 @@ body {
   width: 300px;
   height: 122px;
   margin: 5px;
-  
-    }
-
-  
- }
+}
+.features h3{
+  font-family:Cuprum;
+  font-size:24px;
+  font-weight:bold;
+  line-height:1.25;
+  color:#ffffff;
+}
+.features span{
+  font-family:Cuprum;
+  font-size:14px;
+  font-style:normal;
+  line-height:1.286;
+  color:#ffffff; 
+}
 .feature-item1{
-  color: #ffffff;
-  
-  background-color: #ffbf47;
-  background-image: url("../img/orangephone.png");
+  background-color: #ffc047;
+  background-image: url("../img/downphone.png");
   background-position: 130 380;
 }
-
+.feature-item1 span{
+  background-color:#e5ac40;
+}
 .feature-item2{
-  color: #ffffff;
-  
-  
   background-color: #3bbce3;
   background-image: url("../img/bluephone.png");
   background-position: 450 380;
 }
+.feature-item2 span{
+  background-color:#35a9cc;
+}
 .feature-item3{
-  color: #ffffff;
-  
   background-color: #dc91d8;
   background-image: url("../img/violetphone.png");
   background-position: 770 380;
 }
+.feature-item3 span{
+  background-color:#c682c2;
+}
 .feature-item4{
-  color: #ffffff;
-  
   background-color: #8ed78f;
   background-image: url("../img/greenphone.png");
   background-position: 770 522;
 }
+.feature-item4 span{
+  background-color:#80c180;
+}
 .feature-item5{
-  color: #ffffff;
-  
   background-color: #ffc047;
-  background-image: url("../img/downphone.svg");
+  background-image: url("../img/downphone.png");
   background-position: 770 665;
+}
+.feature-item5 span{
+  background-color:#e5ac40;
+}
+.slider h3{
+  font-family:Cuprum;
+  font-size:36px;
+  font-weight:bold;
+  line-height:1;
+  color:#ffffff;
+}
+.slider p{
+  font-family:Cuprum;
+  font-size:18px;
+  font-style:normal;
+  line-height:1.333;
+  color:#ffffff;
 }
 .gallery{
  display: inline-block; 
  background-position: 130 522;
 }
-
+.open-catalog{
+  font-family:Cuprum;
+  font-size:14px;
+  font-style:normal;
+  line-height:1.286;
+  color:#ffffff;
+  background-image:url("../img/sliderbtn.png");
+  background-color:#ee3643;
+}
 /* Перфораторы*/
 .popular{
- 
-  
- display: inline-block;
+  display: inline-block;
   width: 940px;
   height: 90px;
   margin: 5px;
  background-color: #f9f5f0;
 }
 .popular h2{
+  font-family: "Cuprum","sans-serif";
+  font-style:normal;
   font-size: 30px;
-  font-family: "Cuprum";
-  color: rgb(50, 66, 92);
+  color:#32425c;
   text-transform: uppercase;
   line-height: 1;
   text-align: left;
   }
 
 .popular a{ 
-  font-size: 3.994px;
-  font-family: "Cuprum";
-  color: rgb(255, 255, 255);
+  font-family: "Cuprum","sans-serif";
+  font-style:normal;
+  font-size:14px;  
+  color:#ffffff;
   text-transform: uppercase;
   line-height: 1.286;
+  text-align: right;
  
  background:url("../img/button-popular.png"); 
   background: width="255px" height="40px";
 }
+.block_{
+  display: inline-block;
+  width: 220px;
+  height: 318px;
+  margin: 20px;
+}
+.block_ h3{
+  font-family: "PT Sans","sans-serif";
+  font-weight:bold;
+  font-size:18px;  
+  color:#000000;
+  line-height: 1.111;
+  text-align: center;  
+}
+.sale{
+  font-family: "PT Sans","sans-serif";
+  font-style:normal;
+  font-size:17px;  
+  color:#999999;
+  line-height: 1.059;
+  text-align: center;  
+  text-decoration:line-through;
+}
+.realization{
+  font-family: "PT Sans","sans-serif";
+  font-weight:bold;
+  font-size:17px;  
+  color:#ffffff;
+  line-height: 1.059;
+  text-align: center;  
+ }
+.realization{
+  background-image:url("btn14.png");
+  background-color:#ee3643;
+}
+.block2{
+  display: inline-block;
+  width: 220px;
+  height: 145px;
+  margin: 20px;
+ }
+
 /*service*/
 .service{
   background:#f4f7f9;
 }
 .service h2{
-  font-size: 30px;
-  font-family: "Cuprum";
+  font-family: "Cuprum","sans-serif";
+  font-size: 30px;  
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   line-height: 1;
-  text-align: left;
+  text-align: left;}
+.service_list li{
+  font-family:"Cuprum","sans-serif";
+  font-weight:bold;
+  font-size:21px;
+  line-height: 1.429;
+  color:#ffffff;
+  
+  background-image:url("../img/service-list");
+background-color:#32425c;}
 
+.block3{
+  display: inline-block;
+  width: 241px;
+  height: 62px;
+  margin: 0px;
 }
-.garant{
-  visibility: hidden;
-}
-.garant h2{font-size: 36px;
-  font-family: "GillSans";
-  color: rgb(50, 66, 92);
+
+.delivery h2,
+.credit h2{
+  font-family: "Cuprum","sans-serif";
+  font-style:normal;
+  font-size: 36px;  
+  color:#32425c;
+  line-height: 1;
+  text-align: left;}
+
+.delivery p,
+.guarantee p,
+.credit p{
+  font-family: "PT Sans","sans-serif";
+  font-style:normal;
+  font-size: 13px;  
+  color:#000000;
+  line-height: 1;
+  text-align: left;}
+.guarantee h2{
+  font-family: "GillSans","sans-serif";
+  font-size: 36px;
+  color: #32425c;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
   line-height: 0.667;
-    text-align: left;}
-.garant p{
-  
+  text-align: left;}
+.credit a{
+  background-image:url("../img/zayavka.png");
+  background-color:#ff5357;
 }
+.footer_info{
+  font-family: "Cuprum","sans-serif";
+  font-size: 18px;
+  font-style:normal;
+  color:#;
+  line-height: 1.333;
+  
+  color:#f1f5f7;
+  background:url("../img/displayfooter1.png");
+  background-color:#32425c;
+}
+.footer_info.menu3 {
+  color:#ffd180;  
+}
+.about_us{
+  font-family: "Cuprum","sans-serif";
+  font-size: 16px;
+  font-style:normal;
+  line-height: 1.125;
+  color:#ffffff;
+  background:url("../img/displayfooter2.png");
+   background-color:#293449;
+}
+.public_seti{
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  padding: 1px;
+}
+.public_seti 1{
+color:#ffffff;
+background-color:#212a3a;}
+.public_seti 2{
+color:#ffffff;
+background-color:#212a3a;}
+.public_seti 3{
+color:#ffffff;
+background-color:#212a3a;}
+}
+.about_us.hot_line{ 
+  color:#ffd180;
+}
+
